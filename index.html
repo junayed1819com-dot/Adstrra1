@@ -3,22 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adsterra 6-Slot Multi-Ad System</title>
+    <title>Adsterra Ultra Multi-Ad System</title>
     <style>
-        /* পুরো পেজের স্টাইল */
         body {
             background-color: #000;
             margin: 0;
             padding: 0;
             overflow: hidden;
-            font-family: 'Courier New', Courier, monospace;
+            font-family: 'Arial', sans-serif;
         }
 
-        /* ৬টি অ্যাড স্লটের গ্রিড ডিজাইন */
+        /* ৬টি অ্যাড স্লটের গ্রিড */
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(3, 1fr); /* ৩টি কলাম */
-            grid-template-rows: repeat(2, 1fr);    /* ২ টি সারি */
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
             height: 100vh;
             width: 100vw;
             gap: 5px;
@@ -32,94 +31,112 @@
             background-color: #fff;
         }
 
-        /* টাইমার ওভারলে */
+        /* কমন বাটন স্টাইল */
+        .nav-button {
+            position: fixed;
+            top: 20px;
+            padding: 15px 25px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            z-index: 10000;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            background-size: 400% 400%;
+            animation: gradientBG 5s ease infinite, glow 2s ease-in-out infinite alternate;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            transition: transform 0.2s;
+        }
+
+        .nav-button:hover {
+            transform: scale(1.1);
+        }
+
+        /* ডান দিকের বাটন (Developer) */
+        .dev-btn {
+            right: 20px;
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        }
+
+        /* বাম দিকের বাটন (Income Trick) */
+        .trick-btn {
+            left: 20px;
+            background: linear-gradient(-45deg, #23d5ab, #23a6d5, #e73c7e, #ee7752);
+        }
+
+        /* এনিমেশনসমূহ */
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        @keyframes glow {
+            from { box-shadow: 0 0 10px rgba(255,255,255,0.5); }
+            to { box-shadow: 0 0 20px rgba(255,255,255,0.8), 0 0 30px rgba(255,255,255,0.4); }
+        }
+
+        /* টাইমার (নিচে মাঝখানে) */
         #timer-box {
             position: fixed;
             bottom: 20px;
-            right: 20px;
-            background: rgba(0, 0, 0, 0.9);
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.8);
             color: #00ff00;
             padding: 10px 20px;
             border-radius: 10px;
             font-size: 16px;
             border: 1px solid #00ff00;
             z-index: 10000;
-            box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
         }
 
-        /* ডেভেলপার কন্টাক্ট বাটন */
-        .dev-button {
-            position: fixed;
-            bottom: 20px;
-            left: 20px;
-            background: linear-gradient(45deg, #0088cc, #00c2ff);
-            color: white;
-            padding: 12px 25px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 16px;
-            z-index: 10000;
-            box-shadow: 0 4px 15px rgba(0, 136, 204, 0.5);
-            transition: transform 0.3s;
-            display: flex;
-            align-items: center;
-        }
-
-        .dev-button:hover {
-            transform: scale(1.05);
-            background: linear-gradient(45deg, #00c2ff, #0088cc);
-        }
-
-        /* মোবাইলের জন্য রেসপন্সিভ */
-        @media (max-width: 600px) {
+        @media (max-width: 800px) {
             .grid-container {
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: repeat(3, 1fr);
             }
-            .dev-button {
-                padding: 8px 15px;
-                font-size: 12px;
-            }
-            #timer-box {
-                padding: 8px 15px;
-                font-size: 12px;
+            .nav-button {
+                padding: 10px 15px;
+                font-size: 11px;
+                top: 10px;
             }
         }
     </style>
 </head>
 <body>
 
-    <div id="timer-box">Refreshing in: <span id="seconds">30</span>s</div>
+    <a href="https://t.me/Online_Income_sourcee" target="_blank" class="nav-button trick-btn">
+        Free Income Trick Group
+    </a>
 
-    <a href="https://t.me/rifat_developer" target="_blank" class="dev-button">
+    <a href="https://t.me/rifat_developer" target="_blank" class="nav-button dev-btn">
         Developer Contact
     </a>
+
+    <div id="timer-box">Refreshing in: <span id="seconds">30</span>s</div>
 
     <script src="https://planetsrecipe.com/f5/2e/60/f52e603c68e6e01cac72d54c5068a32b.js"></script>
 
     <div class="grid-container">
         <iframe src="https://www.effectivegatecpm.com/hj99iw71mj?key=b09b829801f8c23659f1cb7fa52884eb"></iframe>
-        
         <iframe src="https://www.effectivegatecpm.com/e5fa9sweyb?key=e1832a9bf501f9d70defa0c0ef432285"></iframe>
-        
         <iframe src="https://planetsrecipe.com/xdfvznnb?key=9d45cb334e98338c603288a4b7a3b4f7"></iframe>
-        
         <iframe src="https://www.effectivegatecpm.com/hj99iw71mj?key=b09b829801f8c23659f1cb7fa52884eb"></iframe>
-        
         <iframe src="https://www.effectivegatecpm.com/e5fa9sweyb?key=e1832a9bf501f9d70defa0c0ef432285"></iframe>
-        
-        <iframe src="https://planetsrecipe.com/xdfvznnb?key=9d45cb334e98338c603288a4b7a3b4f7"></iframe>
+        <iframe src="https://planetsrecipe.com/xtz4mhb1?key=aa5f104bf5cf2d10016c7688a972aaf2"></iframe>
     </div>
 
     <script>
         let timeLeft = 30;
         const secondsSpan = document.getElementById('seconds');
 
-        const countdown = setInterval(() => {
+        setInterval(() => {
             timeLeft--;
             secondsSpan.innerText = timeLeft;
-
             if (timeLeft <= 0) {
                 location.reload();
             }
